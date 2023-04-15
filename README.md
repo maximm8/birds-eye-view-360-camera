@@ -4,7 +4,7 @@ Implementation of the birds eye view (or 360 camera) projection using python and
 The basic idea is to project plane points (that represents ground) to image plane using camera parameters and then use these projected points to sample image that represents top view (bird eye view). 
 
 
-# Algorithm Steps
+# Algorithm
 - calibrate camera
 - estimate location of the camera with respect to ground
 - project ground points to image plane using calibration parameters
@@ -24,12 +24,17 @@ The basic idea is to project plane points (that represents ground) to image plan
 ![mario](docs/mario.png)
 ## car
 ![car](docs/car01.png)
+## cars (two cameras)
+![car](docs/cars.png)
 
-
-# TODO
-- Test 2 or more cameras
 
 # Usage
+to run single camera example
 ```
 python birds_eye_view.py
+```
+
+to run multi-camera example
+```
+python birds_eye_view_multicam.py
 ```
