@@ -62,9 +62,6 @@ if __name__ == '__main__':
         rvec.append(rvec_)
         tvec.append(tvec_)
 
-        # print('K:', K[cam_ind])
-        # print('tvec:', tvec_)
-
     #3 create top view 
     # project plane to image 
     offsetx1, offsetx2 = 500, 500
@@ -92,11 +89,8 @@ if __name__ == '__main__':
             
             cv2.imshow(f'input {cam_ind}', img[cam_ind])
 
-
         img_top = cv2.resize(img_top, (int(w_new/2), int(h_new/2)))
         cv2.imshow(f'top view ', img_top)
         cv2.waitKey()
 
-
-    
         
